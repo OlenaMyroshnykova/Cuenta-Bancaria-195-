@@ -1,11 +1,16 @@
 package com.bank;
 
 public class CheckingAccount extends Account {
-    public float overdraft;
+    private float overdraft;
 
     public CheckingAccount(float balance, float annualInterestRate) {
         super(balance, annualInterestRate);
         this.overdraft = 0;
+    }
+
+    
+    public float getOverdraft() {
+        return overdraft;
     }
 
     @Override
